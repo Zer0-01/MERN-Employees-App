@@ -40,7 +40,7 @@ export default function RecordList() {
   const [records, setRecords] = useState([]);
 
   // This method fetches the records from the database.
-  useEffect(() => {
+useEffect(() => {
     async function getRecords() {
       const response = await fetch(`http://localhost:5050/record/`);
       if (!response.ok) {
